@@ -1,187 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Tickets</title>
-    <link rel="stylesheet" href="CSS/order.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Tickets</title>
+
+<link rel="stylesheet" href="CSS/order.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-<form action="">
-    <div class="CON-NAV">
-        <div class="BACK"><a href="index.html">Go Back&ensp;|</a></div>
-        <div class="CON-H1"><p>Order Tickets </p></div>
-    </div>
+<form>
 
-    <div class="CON-FORM">
-        <fieldset>
-            <legend>Flight Booking Form</legend>
+<div class="CON-NAV">
+  <div class="BACK"><a href="index.html">Go Back&ensp;|</a></div>
+  <div class="CON-H1"><p>Order Tickets </p></div>
+</div>
 
-            <div class="CON-FORM1">
-                <p class="T-FORM1">- Full Name</p>
-                <input type="text" placeholder=" Full Name of Passenger" class="INP-FORM1" required >
+<div class="CON-FORM">
+<fieldset>
+<legend>Flight Booking Form</legend>
 
-                <p class="T-FORM1">- ID card / Passport</p>
-                <input type="text" placeholder="Identification Number (ID Card/Passport)" class="INP-FORM1" required>
+<div class="CON-FORM1">
+  <p class="T-FORM1">- Full Name</p>
+  <input type="text" class="INP-FORM1" required>
 
-                <p class="T-FORM1">- Email Address</p>
-                <input type="text" placeholder="Email Address" class="INP-FORM1"  required>
+  <p class="T-FORM1">- ID card / Passport</p>
+  <input type="text" class="INP-FORM1" required>
 
-                <p class="T-FORM1">- Phone Number</p>
-                <input type="text" placeholder="Phone Number +6289514802502" class="INP-FORM1"  required>
+  <p class="T-FORM1">- Email Address</p>
+  <input type="text" class="INP-FORM1" required>
 
-                <p class="T-FORM1">- Payment Method</p>
-                <select class="INP-FORM1"  required>
-                    <option value="transfer">Transfer</option>
-                    <option value="Cash">Cash</option>
-                </select>
-            </div>
+  <p class="T-FORM1">- Phone Number</p>
+  <input type="text" class="INP-FORM1" required>
 
-            <div class="CON-FORM2">
-                <p class="T-FORM2">- Departure City</p>
-                <input type="text" placeholder=" Ex : Jakarta - Depok - Bogor -Tangerang - Bekasi" class="INP-FORM2"  required>
+  <p class="T-FORM1">- Payment Method</p>
+  <select class="INP-FORM1" required>
+    <option>Transfer</option>
+    <option>Cash</option>
+  </select>
+</div>
 
-                <p class="T-FORM2">- Destination City</p>
-                <select id="destination" class="INP-FORM2"  required>
-                    <option value="swiss">Swiss</option>
-                    <option value="china">China</option>
-                    <option value="italy">Italy</option>
-                    <option value="holland">Netherland</option>
-                    <option value="newzealand">Newzealand</option>
-                    <option value="japan">Japan</option>
-                </select>
+<div class="CON-FORM2">
+  <p class="T-FORM2">- Departure City</p>
+  <input type="text" class="INP-FORM2" required>
 
-                <p class="T-FORM2">- Number of Passengers</p>
-                <input type="text" id="ticketQty" placeholder=" Ex : 1 - 10 tickets / person" class="INP-FORM2"  required>
+  <p class="T-FORM2">- Destination City</p>
+  <select id="destination" class="INP-FORM2" required>
+    <option value="swiss">Swiss</option>
+    <option value="china">China</option>
+    <option value="italy">Italy</option>
+    <option value="holland">Netherland</option>
+    <option value="newzealand">Newzealand</option>
+    <option value="japan">Japan</option>
+  </select>
 
-                <p class="T-FORM2">- Departure Date</p>
-                <input type="date" class="INP-FORM2"  required>
+  <p class="T-FORM2">- Number of Passengers</p>
+  <input type="text" id="ticketQty" class="INP-FORM2" required>
 
-                <p class="T-FORM2">- Airlanes</p>
-                <select id="airline" class="INP-FORM2"  required>
-                    <option value="flyEmirates">Fly Emirates</option>
-                    <option value="deltaAirLanes">Delta Airlanes</option>
-                    <option value="singaporeAirlanes">Singapore Airlanes</option>
-                </select>
+  <p class="T-FORM2">- Departure Date</p>
+  <input type="date" class="INP-FORM2" required>
 
-                <p class="T-FORM2">- Flight Class</p>
-                <select id="flightClass" class="INP-FORM2"  required>
-                    <option value="economyClass">Economy Class</option>
-                    <option value="businessClass">Business Class</option>
-                    <option value="firstClass">First Class</option>
-                </select>
-            </div>
-        </fieldset>
-    </div>
+  <p class="T-FORM2">- Airlanes</p>
+  <select id="airline" class="INP-FORM2" required>
+    <option value="flyEmirates">Fly Emirates</option>
+    <option value="deltaAirLanes">Delta Airlanes</option>
+    <option value="singaporeAirlanes">Singapore Airlanes</option>
+  </select>
 
-    <div class="CON-AGREEMENTS">
-        <p class="T-AGREE">
-            <input type="checkbox">
-          I hereby agree to the purchase of the flight ticket and acknowledge that I have provided all required personal data accurately and voluntarily. I understand that my personal information will be used solely for the purpose of processing this transaction and adhering to applicable regulations. I am also willing to comply with all rules and procedures related to the flight and the airline’s policies. Furthermore, I confirm that I am prepared to follow any additional instructions or requirements set forth by the airline or relevant authorities.
+  <p class="T-FORM2">- Flight Class</p>
+  <select id="flightClass" class="INP-FORM2" required>
+    <option value="economyClass">Economy Class</option>
+    <option value="businessClass">Business Class</option>
+    <option value="firstClass">First Class</option>
+  </select>
+</div>
 
+</fieldset>
+</div>
 
-        </p>
-    </div>
+<button type="button" id="btnHitung" class="BTN">
+  Accept Approval and Pay
+</button>
 
-    <button type="button" id="btnHitung" class="BTN">Accept Approval and Pay</button>
+<p class="T-PAY">
+TOTAL PAYMENT
+<span class="S-T-PAY">
+The total payment has been fully inclusive of all applicable destination taxes.
+<i class="fas fa-hand-holding-dollar"></i>
+</span>
+</p>
 
-    <p class="T-PAY">
-        TOTAL PAYMENT
-        <span class="S-T-PAY">
-            The total payment has been fully inclusive of all applicable destination taxes, the total cost based on the number of tickets purchased, and the selected airline class, ensuring that there are no additional charges or hidden fees.
-            <i class="fas fa-hand-holding-dollar"></i>
-        </span>
-    </p>
+<div class="CON-PAY">
+  <p id="totalHarga">Rp -</p>
+</div>
 
-    <div class="CON-PAY">
-        <p id="totalHarga">Rp -</p>
-    </div>
+<!-- 🔴 TOMBOL DIPERBAIKI (TANPA <a>) -->
+<button class="BTN-TIC" id="btnGetTicket" type="button">
+  Get the ticket
+</button>
 
-    <button class="BTN-TIC" id="btnGetTicket"><a href="index.html">Get the ticket</a></button>
 </form>
 
+<!-- MODAL -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <h2>Booking Berhasil</h2>
+    <p>Selamat, tiket Anda sudah berhasil di-booking.</p>
+    <button id="btnCloseModal">OK</button>
+  </div>
+</div>
+
+<!-- SCRIPT HITUNG -->
 <script>
 document.getElementById("btnHitung").addEventListener("click", function () {
 
-    const airline = document.getElementById("airline").value;
-    const flightClass = document.getElementById("flightClass").value;
-    const destination = document.getElementById("destination").value;
-    const qty = parseInt(document.getElementById("ticketQty").value);
+const qty = parseInt(document.getElementById("ticketQty").value);
+if (!qty || qty <= 0) {
+  document.getElementById("totalHarga").innerText = "Jumlah tiket tidak valid";
+  return;
+}
 
-    if (isNaN(qty) || qty <= 0) {
-        alert("Jumlah tiket tidak valid");
-        return;
-    }
+const airline = document.getElementById("airline").value;
+const flightClass = document.getElementById("flightClass").value;
+const destination = document.getElementById("destination").value;
 
-    const ticketPrice = {
-        flyEmirates: {
-            economyClass: 3500000,
-            businessClass: 8500000,
-            firstClass: 15500000
-        },
-        deltaAirLanes: {
-            economyClass: 4500000,
-            businessClass: 9500000,
-            firstClass: 17500000
-        },
-        singaporeAirlanes: {
-            economyClass: 6500000,
-            businessClass: 10500000,
-            firstClass: 21500000
-        }
-    };
+const ticketPrice = {
+  flyEmirates:{economyClass:3500000,businessClass:8500000,firstClass:15500000},
+  deltaAirLanes:{economyClass:4500000,businessClass:9500000,firstClass:17500000},
+  singaporeAirlanes:{economyClass:6500000,businessClass:10500000,firstClass:21500000}
+};
 
-    const taxPrice = {
-        flyEmirates: {
-            swiss: 1300000,
-            china: 1200000,
-            italy: 1400000,
-            holland: 1600000,
-            newzealand: 1200000,
-            japan: 1800000
-        },
-        deltaAirLanes: {
-            swiss: 1500000,
-            china: 1700000,
-            italy: 1900000,
-            holland: 2100000,
-            newzealand: 1700000,
-            japan: 2300000
-        },
-        singaporeAirlanes: {
-            swiss: 2300000,
-            china: 2200000,
-            italy: 2400000,
-            holland: 2600000,
-            newzealand: 2200000,
-            japan: 2800000
-        }
-    };
+const taxPrice = {
+  flyEmirates:{swiss:1300000,china:1200000,italy:1400000,holland:1600000,newzealand:1200000,japan:1800000},
+  deltaAirLanes:{swiss:1500000,china:1700000,italy:1900000,holland:2100000,newzealand:1700000,japan:2300000},
+  singaporeAirlanes:{swiss:2300000,china:2200000,italy:2400000,holland:2600000,newzealand:2200000,japan:2800000}
+};
 
-    const total =
-        (ticketPrice[airline][flightClass] + taxPrice[airline][destination]) * qty;
+const total = (ticketPrice[airline][flightClass] + taxPrice[airline][destination]) * qty;
+document.getElementById("totalHarga").innerText = "Rp " + total.toLocaleString("id-ID");
 
-    document.getElementById("totalHarga").innerText =
-        "Rp " + total.toLocaleString("id-ID");
 });
 </script>
 
+<!-- SCRIPT MODAL -->
 <script>
 document.getElementById("btnGetTicket").addEventListener("click", function () {
+  document.getElementById("successModal").style.display = "block";
+});
 
-    // Simpan status booking
-    localStorage.setItem("ticketBooked", "true");
-
-    // Pindah ke halaman utama
-    window.location.href = "index.html";
+document.getElementById("btnCloseModal").addEventListener("click", function () {
+  localStorage.setItem("ticketBooked", "true");
+  window.location.href = "index.html";
 });
 </script>
-
 
 </body>
 </html>
